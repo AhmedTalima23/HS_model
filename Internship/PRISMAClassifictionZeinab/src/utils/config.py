@@ -3,7 +3,7 @@ import os
 class Config:
     def __init__(self):
         # === Base data directory ===
-        self.base_data_dir = r"D:/MINE/NARSS/Dr.Noor/Internship"
+        self.base_data_dir = r"Internship"
         self.base_data_outputs = os.path.join(self.base_data_dir, 'outputs')
 
         # === Original HDF5 scene information ===
@@ -61,4 +61,5 @@ class Config:
         # Create each directory
         for dir_path in dirs:
             os.makedirs(dir_path, exist_ok=True)
+
 config = Config()
